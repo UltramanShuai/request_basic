@@ -2,7 +2,6 @@
 # Author   : Leo
 # Time     : 17/12/2018
 import os
-
 import requests
 
 
@@ -15,10 +14,7 @@ class TiebaSpider:
         pass
 
     def get_url_list(self):
-        url_list = []
-        for i in range(1000):
-            url_list.append(self.url.format(i * 50))
-        return url_list
+        return [self.url.format(i * 50) for i in range(1000)]
 
     def parse_url(self, url):
         print(url)
