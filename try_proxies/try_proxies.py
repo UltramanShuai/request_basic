@@ -1,6 +1,7 @@
 # _*_coding:utf-8_*_
 # Author   : Leo
 # Time     : 18/12/2018
+import sys
 
 import requests
 
@@ -22,5 +23,6 @@ class TryProxies:
 
 
 if __name__ == '__main__':
+
     try_proxies = TryProxies("http://www.baidu.com")
     try_proxies.run()
