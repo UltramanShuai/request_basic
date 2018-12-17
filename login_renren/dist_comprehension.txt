@@ -1,0 +1,2 @@
+The way for dictionary comprehension:
+{i:i*10 for i in range(20)}
