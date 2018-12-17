@@ -2,6 +2,8 @@
 # Author   : Leo
 # Time     : 17/12/2018
 import os
+import sys
+
 import requests
 
 
@@ -43,5 +45,8 @@ class TiebaSpider:
 
 
 if __name__ == '__main__':
-    tieba_spider = TiebaSpider("lol")
-    tieba_spider.run()
+    try:
+        tieba_spider = TiebaSpider(sys.argv[1])
+        tieba_spider.run()
+    except IndexError:
+        print("Input a name of 'tieba'")
