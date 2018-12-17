@@ -52,4 +52,5 @@ if __name__ == '__main__':
         translate = Translation(sys.argv[1])
         translate.run()
     except IndexError:
-        pass
+        print("Please input a query after .py file")
+        print("etc. python baidu_translation.py 'How are you'")
